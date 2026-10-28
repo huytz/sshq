@@ -1,0 +1,18 @@
+[package]
+name = "sshq"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "Search ~/.ssh/config hosts and find which host owns an IP or CIDR"
+license = "MIT"
+repository = "https://github.com/huytz/sshq"
+homepage = "https://github.com/huytz/sshq"
+readme = "README.md"
+keywords = ["ssh", "ssh-config", "cli", "cidr", "search"]
+categories = ["command-line-utilities"]
+authors = ["huytz"]
+
+[profile.release]
+opt-level = 3
+lto = true
+strip = true
